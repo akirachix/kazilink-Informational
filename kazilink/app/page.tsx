@@ -1,8 +1,11 @@
-import Image from "next/image";
+import WorkerJobsInfo from "./features/workerInfo"
+import KaziLinkFeatures from "./features/features"
 
-export default function Home() {
+export default function KaziLink (){
   return (
-    <div>
-    </div>
+  <div>
+    <WorkerJobsInfo/>
+    <KaziLinkFeatures/>
+  </div>
   )
 }
