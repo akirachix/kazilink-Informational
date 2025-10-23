@@ -9,8 +9,7 @@ const HeroFooterSection: React.FC = () => {
     <div className="font-sans text-foreground">
       <header
         className="bg-linear-to-r from-[#3D1700] via-[#a06b3f] to-[#E0B15E] py-12 md:py-20 text-white"
-        role="region"
-        aria-label="Hero - Ready to get started"
+      
       >
         <div className="max-w-4xl mx-auto px-6 text-left md:text-center">
           <h1 className="text-2xl sm:text-3xl md:text-[clamp(28px,4.2vw,48px)] font-extrabold mb-3 md:mb-4 leading-tight">
@@ -23,7 +22,7 @@ const HeroFooterSection: React.FC = () => {
           </p>
 
           <div
-            aria-label={`USSD code: ${ussdCode}. Dial this in your phone's dialer.`}
+            aria-label={`USSD code: ${ussdCode}`}
             className="inline-flex items-center justify-center w-full sm:w-auto max-w-xs sm:max-w-sm md:max-w-xs mx-0 md:mx-auto"
           >
             <div className="flex flex-col items-start md:items-center text-left md:text-center bg-[#f3e6db] text-[#4a1f11] rounded-2xl px-6 py-3 sm:px-8 sm:py-4 md:px-6 md:py-3 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 transition-all duration-150 focus:outline-none focus:ring-2 focus:ring-[#4f1808]">
