@@ -61,7 +61,7 @@ export default function HowItWorks() {
                 <div>
                   <h4 className="font-semibold text-2xl text-[#3D1700]">3. Hire Instantly</h4>
                   <p className="mt-3 text-base md:text-lg text-[#3D1700] leading-relaxed max-w-xl">
-                    Workers confirm if interested via USSD and you receive SMS of full application.
+                    Workers confirm if interested via USSD and they receive SMS of full application.
                   </p>
                 </div>
               </div>
