@@ -47,7 +47,7 @@ export default function HowItWorks() {
                 <div>
                   <h4 className="font-semibold text-2xl text-[#3D1700]">2. Workers Get Alerts</h4>
                   <p className="mt-3 text-base md:text-lg text-[#3D1700] leading-relaxed max-w-xl">
-                    Registered workers receive instant SMS notifications about your job posting.
+                    Registered workers receive instant SMS notifications about their job posting.
                   </p>
                 </div>
               </div>
