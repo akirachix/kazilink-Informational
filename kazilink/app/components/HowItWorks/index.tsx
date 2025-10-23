@@ -4,7 +4,7 @@ import { FiSmartphone, FiBell, FiCheckCircle, FiUsers } from "react-icons/fi";
 
 export default function HowItWorks() {
   return (
-    <section className="py-16 bg-white">
+    <section id = "howitworks" className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <header className="text-center mb-8">
           <h2 className="text-3xl md:text-5xl lg:text-5xl font-semibold text-[#3D1700]">
@@ -71,7 +71,7 @@ export default function HowItWorks() {
           <div>
             <div className="relative w-full max-w-md md:max-w-lg rounded-xl overflow-hidden shadow-lg ring-1 ring-[#3D1700]/5 aspect-[4/5]">
               <Image
-                src="/howitworks-farmers.jpg"
+                src="/images/farmer.png"
                 alt="Farmer and worker interacting"
                 fill
                 className="object-cover"

@@ -4,7 +4,7 @@ import { FiArrowRight } from 'react-icons/fi';
 
 export default function Hero() {
   return (
-    <section className="relative h-[85vh] flex items-center">
+    <section id = "hero" className="relative h-[85vh] flex items-center">
       <Image
         src="/images/background.png"
         alt="Farmer"
