@@ -33,7 +33,7 @@ export default function HowItWorks() {
                 <div>
                   <h4 className="font-semibold text-2xl text-[#3D1700]">1. Post a Job</h4>
                   <p className="mt-3 text-base md:text-lg text-[#3D1700] leading-relaxed max-w-xl">
-                    Dial *123# and follow simple prompts to post your job details.
+                    Dial *384*88462# and follow simple prompts to post your job details.
                   </p>
                 </div>
               </div>
