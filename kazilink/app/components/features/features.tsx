@@ -50,7 +50,7 @@ const features = [
 
 export default function KaziLinkFeatures() {
   return (
-    <section className="py-8 sm:py-10 px-4 max-w-5xl mx-auto">
+    <section id="features" className="py-8 sm:py-10 px-4 max-w-5xl mx-auto">
       <h2 className="text-3xl text-center md:text-5xl lg:text-[50px] font-semibold text-[#3D1700]">
       Why Choose KaziLink
       </h2>
