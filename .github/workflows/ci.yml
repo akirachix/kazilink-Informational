@@ -1,0 +1,57 @@
+name: Deploy Next to Vercel
+
+
+on:
+ push:
+   branches: [main, develop]
+ pull_request:
+   branches: [main, develop]
+
+
+jobs:
+ deploy:
+   runs-on: ubuntu-latest
+   steps:
+     - uses: actions/checkout@v3
+
+
+     - uses: actions/setup-node@v3
+       with:
+         node-version: "18"
+
+
+     - name: Install dependencies
+       run: npm install
+       working-directory: kazilink
+
+
+     - name: List lucide-react in node_modules
+       run: ls -l node_modules/lucide-react
+       working-directory: kazilink
+
+
+     - name: Run tests
+       run: npm test
+       working-directory: kazilink
+
+
+     - name: Build Next.js app
+       run: npm run build
+       working-directory: kazilink
+
+
+     - name: Deploy to Vercel (Production)
+       if: github.ref == 'refs/heads/main'
+       env:
+         VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+       run: npx vercel --prod --confirm --token $VERCEL_TOKEN
+       working-directory: kazilink
+
+
+     - name: Deploy to Vercel (Preview)
+       if: github.ref != 'refs/heads/main'
+       env:
+         VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+       run: npx vercel --confirm --token $VERCEL_TOKEN
+       working-directory: kazilink
+
