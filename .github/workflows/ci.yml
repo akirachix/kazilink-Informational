@@ -17,7 +17,7 @@ jobs:
 
      - uses: actions/setup-node@v3
        with:
-         node-version: "18"
+         node-version: ">=20"
 
 
      - name: Install dependencies
@@ -54,4 +54,3 @@ jobs:
          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
        run: npx vercel --confirm --token $VERCEL_TOKEN
        working-directory: kazilink
-
