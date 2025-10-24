@@ -8,7 +8,7 @@ import HeroFooterSection from "./components/footer";
 
 export default function KaziLink (){
   return (
-  <div className="bg-white">
+  <div >
     <Navbar />
       <Hero />
       <HowItWorks />
