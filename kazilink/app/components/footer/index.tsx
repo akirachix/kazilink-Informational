@@ -6,7 +6,7 @@ const HeroFooterSection: React.FC = () => {
   const ussdCode = "*384*88462#";
 
   return (
-    <div className="font-sans text-foreground">
+    <div id = "contact" className="font-sans text-foreground">
       <header
         className="bg-linear-to-r from-[#3D1700] via-[#a06b3f] to-[#E0B15E] py-12 md:py-20 text-white"
       
@@ -52,7 +52,7 @@ const HeroFooterSection: React.FC = () => {
                 <li>
                   <Link
                     className="text-base hover:underline focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-[#f3e6db]"
-                    href="#home"
+                    href="#hero"
                   >
                     Home
                   </Link>
@@ -60,7 +60,7 @@ const HeroFooterSection: React.FC = () => {
                 <li>
                   <Link
                     className="text-base hover:underline focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-[#f3e6db]"
-                    href="#how-it-works"
+                    href="#howitworks"
                   >
                     How It Works
                   </Link>

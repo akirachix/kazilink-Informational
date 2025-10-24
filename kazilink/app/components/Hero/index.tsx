@@ -25,13 +25,13 @@ export default function Hero() {
           KaziLink makes hiring seasonal farm workers simple. Post jobs, get SMS notifications,
           and connect with workers through any mobile phone.
         </p>
-
+<a href="#howitworks">
         <button
-          className="inline-flex items-center gap-3 bg-[#E0B15E] text-white px-8 py-3 rounded-md shadow-md hover:opacity-95 "
+          className="inline-flex items-center gap-3 bg-[#E0B15E] text-white px-8 py-3 rounded-md shadow-md hover:opacity-95"
         >
           <span className="text-lg font-medium">Explore</span>
           <FiArrowRight className="w-5 h-5" />
-        </button>
+        </button></a>
       </div>
     </section>
   );
